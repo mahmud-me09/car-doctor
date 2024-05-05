@@ -8,10 +8,13 @@ const Root = () => {
 	return (
 		<HelmetProvider>
 			<div className="max-w-[1320px] mx-auto">
-                <NavBar></NavBar>
+				<NavBar></NavBar>
 				<Outlet></Outlet>
-                <Footer></Footer>
+
 				<ToastContainer />
+			</div>
+			<div className="p-20 bg-black text-white">
+				<Footer></Footer>
 			</div>
 		</HelmetProvider>
 	);
